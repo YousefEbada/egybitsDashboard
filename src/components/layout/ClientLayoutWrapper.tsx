@@ -13,7 +13,7 @@ import { useData } from '@/context/DataContext';
 const navItems = [
   { href: '/', icon: LayoutDashboard, label: 'Home' },
   { href: '/projects', icon: FolderKanban, label: 'Projects' },
-  { href: '/team', icon: Users, label: 'Team' },
+  // { href: '/team', icon: Users, label: 'Team' },
   { href: '/testimonials', icon: MessageSquareQuote, label: 'Testimonials' },
   { href: '/contacts', icon: Mail, label: 'Contacts' },
   { href: '/content', icon: Palette, label: 'Content' },
