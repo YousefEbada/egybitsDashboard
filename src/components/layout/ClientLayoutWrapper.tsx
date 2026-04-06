@@ -4,7 +4,7 @@ import { ReactNode, useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
-  LayoutDashboard, FolderKanban, Users, MessageSquareQuote,
+  LayoutDashboard, FolderKanban, MessageSquareQuote,
   Mail, Settings, Palette, Menu, X, LogOut
 } from 'lucide-react';
 import { ThemeToggle } from '@/components/layout/ThemeToggle';
