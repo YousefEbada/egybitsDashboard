@@ -89,6 +89,11 @@ export default function AdminProjects() {
       return;
     }
 
+    if (galleryImageFiles.length > 20) {
+      alert('Gallery cannot have more than 20 images.');
+      return;
+    }
+
     if (galleryImageFiles.length > 0 && galleryImageFiles.length < 5) {
       alert('Gallery must have at least 5 images if you are providing new ones.');
       return;
@@ -277,7 +282,7 @@ export default function AdminProjects() {
                   }} style={inputStyle} />
                 </div>
                 <div>
-                  <label style={labelStyle}>Gallery Images {creating ? '(Min 5)*' : '(Min 5. Leave empty to keep current)'}</label>
+                  <label style={labelStyle}>Gallery Images {creating ? '(5-20)*' : '(5-20. Leave empty to keep current)'}</label>
                   <input type="file" accept="image/*" multiple onChange={e => {
                     if (e.target.files) {
                       setGalleryImageFiles(Array.from(e.target.files));
